@@ -1,0 +1,547 @@
+/*========================================
+Colors
+==========================================*/
+ html {
+     --color-text-black: #1F2D3D;
+     --color-text-smoke: #304760;
+     --color-light-blue: #C2D2F2;
+     --color-blue: #5176a6;
+     --color-dark-blue: #365884;
+}
+
+/*========================================
+Site Logo
+==========================================*/
+ .site-logo {
+     color: var(--color-blue);
+     font-family: var(--font-titles);
+     font-weight: bold;
+     left: 0;
+     letter-spacing: .3rem;
+     text-decoration: none;
+     text-transform: uppercase;
+}
+ .site-logo h1 {
+     font-size: var(--size-four);
+     margin: .2rem;
+     padding-bottom: 2rem;
+     text-align: left;
+}
+
+/*========================================
+Typography
+==========================================*/
+ html {
+     --font-primary: 'Roboto Condensed', sans-serif;
+     --font-titles: 'Open Sans', sans-serif;
+
+     --ratio: 1.333;
+     --size-one: calc( 1rem * var(--ratio) );
+     --size-two: calc( var(--size-one) * var(--ratio) );
+     --size-three: calc( var(--size-two) * var(--ratio) );
+     --size-four: calc( var(--size-three) * var(--ratio) );
+     --size-five: calc( var(--size-four) * var(--ratio) );
+     --size-six: calc( var(--size-five) * var(--ratio));
+     --size-minus-one: calc( 1rem * .75 );
+     
+     color: var(--color-text-black);
+     font-family: var(--font-primary);
+     font-size: 18px;
+     line-height: 1.45;
+}
+ h1 {
+     font-family: var(--font-titles);
+     font-size: var(--size-six);
+}
+
+ h2 {
+     font-family: var(--font-titles);
+     font-size: var(--size-five);
+     margin-bottom: .6rem;
+     margin-top: .4rem;
+}
+
+ h3 {
+     font-family: var(--font-titles);
+     font-size: var(--size-four);
+     margin-bottom: .8rem;
+     margin-top: .8rem;
+}
+
+ h4 {
+     font-family: var(--font-titles);
+     font-size: var(--size-three);
+     margin-bottom: .8rem;
+     margin-top: .6rem;
+}
+
+ h5 {
+     font-family: var(--font-titles);
+     font-size: var(--size-two);
+}
+
+ h6 {
+     font-family: var(--font-titles);
+     font-size: var(--size-one);
+}
+
+ a {
+     color: var(--color-text-black);
+     text-decoration: none;
+}
+
+ a:active {
+     color: var(--color-light-blue);
+}
+
+ a:focus {
+     color: var(--color-text-smoke);
+}
+
+ a:visited {
+     var(--color-text-black) 
+}
+
+ a:hover {
+     color: var(--color-text-smoke);
+}
+
+ .introduction {
+     font-size: var(--size-two);
+     line-height: 1.4;
+}
+
+ @media ( min-width: 850px ) {
+     .introduction {
+         display: inline-block;
+    }
+}
+
+ .form-microcopy {
+     color: var(--color-text-smoke);
+     font-style: italic;
+     font-weight: light;
+
+}
+
+ .resume-information {
+     max-width: 1200px;
+     padding-top: 4rem;
+}
+
+ .resume-dividers {
+     border-bottom: 1px solid #365884;
+     padding-top: 2rem;
+}
+
+ .resume-logos {
+     max-width: 1200px;
+}
+
+ .logo-item {
+     margin-right: 2rem;
+     padding-bottom: 2rem;
+}
+
+ @media ( min-width: 600px ) {
+     .resume-logos {
+         align-items: baseline;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         max-width: 300px;
+    }
+     .portfolio-grid {
+         display: grid;
+         grid-template-columns: 1fr;
+         max-width: 400px;
+    }
+}
+
+ @media ( min-width: 600px ) {
+     .resume-logos {
+         grid-template-columns: 1fr 1fr 1fr;
+    }
+   
+}
+
+ @media ( min-width: 1000px ) {
+     .portfolio-grid {
+         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+ .client-experience {
+     max-width: 40rem;
+}
+
+ .image-description {
+     max-width: 50rem;
+}
+
+ .portfolio-item h3 {
+     font-size: var(--size-one);
+}
+
+ .photo-info {
+     font-size: .8rem;
+     font-style: italic;
+
+}
+
+/*========================================
+Hero Image Components
+==========================================*/
+ .hero-container {
+     align-items: center;
+     background-image: url("images/hero-image.jpg");
+     background-position: center top;
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+     color: var(--color-dark-blue);
+     display: flex;
+     height: 45vh;
+     justify-content: center;
+     text-align: center;
+     text-shadow: 1px 1px 3px #304760;
+}
+
+ @media ( min-width: 475px ) {
+     .hero-container {
+         flex-direction: column;
+         justify-content: center;
+         padding-top: 10rem;
+    }
+     .hero-container h1 {
+         flex-direction: column;
+         font-size: var(--size-three);
+    }
+}
+
+ @media ( min-width: 700px ) {
+     .hero-container h1 {
+         font-size: var(--size-five);
+    }
+     .hero-container {
+         padding-top: 15rem;
+    }
+}
+
+ @media ( min-width: 1000px ) {
+     .hero-container h1 {
+         font-size: var(--size-six);
+    }
+     .hero-container {
+         padding-top: 10rem;
+    }
+}
+
+ .hero-container h3, a {
+     color: var(--color-dark-blue);
+     font-family: var(--font-titles);
+     font-weight: bold;
+     line-height: 1.2;
+     margin: .6rem;
+     text-align: center;
+}
+
+/*========================================
+Main Page Components / Page Layout
+==========================================*/
+ main {
+     --margin-featured: .5rem;
+     --margin-standard: 40rem;
+
+     max-width: var(--margin-standard);
+     padding-bottom: 5rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+     padding-top: 2rem;
+}
+
+ body {
+     margin: 0 auto;
+}
+
+ @media ( min-width: 575px ) {
+     html {
+         --ratio: 1.32;
+    }
+     main {
+         margin: auto;
+         max-width: 45rem;
+    }
+}
+
+ @media ( min-width: 875px ) {
+     html {
+         --ratio: 1.3;
+    }
+     main {
+         max-width: 48rem;
+    }
+}
+
+ @media ( min-width: 1000px ) {
+     html {
+         --ratio: 1.33;
+    }
+     main {
+         max-width: 55rem;
+    }
+}
+
+/*========================================
+Header Component
+==========================================*/
+ header {
+     background-color: #FFF;
+     overflow: hidden;
+     left: 0;
+     padding-left: 4rem;
+     padding-right: 4rem;
+     right:0;
+     text-align: right;
+     top: 0;
+}
+
+/*========================================
+Navigation
+==========================================*/
+ nav a {
+     text-decoration: none;
+}
+
+ .page-nav a {
+     border-bottom: 2px solid rgba( 0,0,.1,.1 );
+     color: var(--color-dark-blue);
+     display: flex;
+     padding-bottom: .75rem;
+     padding-left: .35rem;
+     padding-right: .35rem;
+     padding-top: 2rem;
+     text-align: left;
+     text-decoration: none;
+}
+ @media ( min-width: 625px ) {
+     .page-nav a {
+         border: none;
+         display: inline-block;
+         padding-top: 2rem;
+    }
+     header {
+         position: fixed;
+    }
+     .site-logo {
+         padding-bottom: .2rem;
+         position: fixed;
+    }
+}
+ .page-nav a:hover, .page-nav a:active {
+     color: var(--color-light-blue);
+     font-style: bold;
+}
+ .page-nav li {
+     display: inline;
+     padding: .6rem;
+}
+ nav ul {
+     list-style-type: none;
+     padding: 0;
+}
+
+/*========================================
+Image Components
+==========================================*/
+ .bio-image, .logo-image {
+     display: block;
+     margin-right: 1.2rem;
+     max-width: 300px;
+     padding-bottom: .2rem;
+}
+
+ @media ( min-width: 625px ) {
+     .bio-image {
+         float: left;
+    }
+}
+
+.thumbnail {
+    max-width: 300px;
+    display: block;
+}
+
+.thumbnail:hover {
+  opacity: 0.8;
+  transition: .5s ease;
+}
+
+/*===================================================
+  Portfolio Image Components
+=====================================================*/
+ .portfolio-item {
+     display: inline-block;
+     margin: 2rem;
+     text-align: center;
+}
+ .portfolio-item img {
+     max-width: 400px;
+}
+ .portfolio-main {
+     display: block;
+     margin: 2rem;
+     padding-top: 4rem;
+}
+
+/*========================================
+Form Components
+==========================================*/
+ input, select, textarea {
+     border: 1px solid var(--color-blue);
+     box-sizing: border-box;
+     display: block;
+     margin-bottom: .5rem;
+     margin-top: .5rem;
+     min-width: 50%;
+     padding: .5rem;
+     -webkit-appearance:none;
+}
+
+ textarea {
+     min-height: 5rem;
+}
+
+ input:focus, select:focus, textarea:focus {
+     box-shadow: 2px 2px 0 #304760;
+     outline: none;
+}
+
+ input:hover, select:hover, textarea:hover {
+     border-color: var(--color-light-blue);
+}
+
+ label {
+     display: block;
+     margin: 2rem 0 0;
+}
+
+ input[type="submit"], button {
+     background-color: var(--color-blue);
+     box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+     display: inline-block;
+     min-width: inherit;
+     padding: .5rem;
+     text-decoration: none;
+}
+
+ input[type="submit"]:hover, button:hover {
+     background-color: white;
+     cursor: pointer;
+}
+
+ input[type="submit"]:active, button:active {
+     background-color: var(--color-dark-blue);
+     color: white;
+     cursor: pointer;
+}
+
+ .contact-form {
+     padding-top: 2rem;
+}
+
+ @media ( min-width: 625px ) {
+     .contact-form {
+         padding-top: 5rem;
+    }
+}
+
+/*========================================
+Footer
+==========================================*/
+ footer {
+     color: var(--color-blue);
+     display: block;
+     text-align: center;
+}
+
+ @media ( min-width: 625px ) {
+     footer {
+         padding-left: 4rem;
+         text-align: left;
+    }
+}
+
+ footer a {
+     margin-right: 1.2rem;
+     text-decoration: none;
+}
+
+ footer a:visited {
+     color: var(--color-blue);
+}
+
+ footer a:active {
+     color: var(--color-light-blue);
+}
+
+ footer a:hover, footer:focus {
+     color: var(--color-dark-blue);
+     text-decoration: underline;
+}
+
+ .copyright {
+     color: var(--color-text-black);
+     font-size: .8rem;
+}
+
+/*========================================
+Annimation and Transitions
+==========================================*/
+ .arrow-bounce {
+     background-size: contain;
+     bottom: -2rem;
+     height: 40px;
+     left: 50%;
+     margin-left:-20px;
+     position: fixed;
+     width: 40px;
+     
+}
+ .bounce {
+     animation: bounce 2s infinite;
+}
+ @keyframes bounce {
+     0%, 20%, 50%, 80%, 100% {
+         transform: translateY(0);
+    }
+     40% {
+         transform: translateY(-30px);
+    }
+     60% {
+         transform: translateY(-15px);
+    }
+}
+
+ .transition-title:hover {
+     color: var(--color-light-blue);
+     transition: all 1s ease;
+}
+
+/*========================================
+Sound (for fun!)
+==========================================*/
+ div#honk {
+     color: #FFF;
+     position: absolute;
+     width: 5rem;
+     height: 5rem;
+     overflow: hidden;
+     padding: 2rem;
+     font-size: 1.5rem;
+     text-align: left;
+}
+ audio#audio-honk {
+     position: absolute;
+     opacity: 0.01;
+}
+ 
